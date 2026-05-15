@@ -1,0 +1,60 @@
+/* General Styles */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+body { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); min-height: 100vh; padding: 20px; }
+
+header { text-align: center; margin-bottom: 30px; color: #2d3436; }
+
+.container { 
+    display: flex; 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    flex-wrap: wrap; 
+}
+
+/* Form Styling */
+.form-container { 
+    flex: 1; 
+    min-width: 300px; 
+    background: white; 
+    padding: 25px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+}
+
+.input-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+input { 
+    width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; outline: none; 
+}
+
+button { 
+    width: 100%; padding: 12px; background: #0984e3; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; 
+}
+button:hover { background: #74b9ff; }
+
+/* Table Styling */
+.display-container { 
+    flex: 2; 
+    min-width: 350px; 
+    background: white; 
+    padding: 25px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+}
+
+.table-wrapper { 
+    overflow-x: auto; 
+    max-height: 400px; /* Task 6: Vertical Scroll */
+}
+
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+th { background-color: #f8f9fa; }
+
+/* Responsive Media Queries (Task 5) */
+@media (max-width: 1024px) { .container { flex-direction: column; } } /* Tablet/Mobile */
+@media (max-width: 640px) { 
+    th, td { font-size: 14px; padding: 8px; } 
+    header h1 { font-size: 1.5rem; }
+}
